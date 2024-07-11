@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: #d03636;
+        }
+
+        main {
+            position: relative;
+            width: 500px;
+            height: 656px;
+            border: 1px solid black;
+            background-color: white;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .closeBtn {
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            left: 469px;
+            top: 13px;
+        }
+
+        .closeBtn img {
+
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            left: 3px;
+            top: 3px;
+            cursor: pointer;
+        }
+
+        .switherLoginRegister {
+            position: absolute;
+            width: 157px;
+            height: 16px;
+            left: 172px;
+            top: 52px;
+            display: flex;
+            justify-content: space-between;
+            font-weight: 500;
+            font-size: 20px;
+        }
+
+        .loginLink {
+            color: #3D3D3D;
+        }
+
+        .registerLink {
+            color: #46A358;
+        }
+
+        .titleRegister {
+            position: absolute;
+            width: 300px;
+            height: 16px;
+            left: 100px;
+            top: 108px;
+            font-weight: 400;
+            font-size: 13px;
+
+        }
+
+        .mainForm {
+            position: absolute;
+            width: 300px;
+            left: 100px;
+            top: 138px;
+        }
+
+        .mainForm input {
+            width: 100%;
+            height: 40px;
+            border: 1px solid #EAEAEA;
+            border-radius: 5px;
+            margin-bottom: 16px;
+            font-size: 14px;
+            line-height: 16px;
+            padding: 12px 14px;
+            display: block;
+            box-sizing: border-box;
+        }
+
+        .mainForm input::placeholder {
+            font-family: 'Cera Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #A5A5A5;
+        }
+
+    
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="closeBtn">
+            <img src="./img/CloseBtn.png" alt="closeBtn" href="#">
+        </div>
+        <div class="switherLoginRegister">
+            <a class="loginLink" href="#">Login</a>
+            <span>|</span>
+            <a class="registerLink" href="#">Register</a>
+
+        </div>
+        <div class="titleRegister">
+            Enter your email and password to register.
+        </div>
+        <form class="mainForm" action="#">
+            <input type="text" placeholder="Username">
+            <input type="email" placeholder="Enter your email address">
+            <input type="password" placeholder="Password">
+            <input type="password" placeholder="Confirm Password">
+        </form>
+    </main>
+</body>
+
+</html>
