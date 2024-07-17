@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background: #eaeaea;
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        main {
+            position: relative;
+            width: 500px;
+            height: 656px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .closeBtn {
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            right: 13px;
+            top: 13px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .closeBtn img {
+            width: 12px;
+            height: 12px;
+            cursor: pointer;
+        }
+
+        .switherLoginRegister {
+            width: 157px;
+            height: 16px;
+            left: 172px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 16px;
+            margin-top: 52px;
+        }
+
+        .switherLoginRegisterDivider {
+            font-weight: 200;
+            color: #727272;
+        }
+
+        .loginLink {
+            color: #3D3D3D;
+        }
+
+        .registerLink {
+            color: #46A358;
+        }
+
+        .titleRegister {
+            width: 300px;
+            height: 16px;
+            left: 100px;
+            margin-top: 40px;
+            color: #3D3D3D;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 16px;
+        }
+
+        form {
+            width: 300px;
+            left: 100px;
+            margin-top: 14px;
+        }
+
+        form input {
+            width: 100%;
+            height: 40px;
+            border: 1px solid #EAEAEA;
+            border-radius: 5px;
+            margin-bottom: 16px;
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: 400;
+            padding: 12px 14px;
+            display: block;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        form input::placeholder {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #A5A5A5;
+        }
+
+        form input:focus {
+            border: 2px solid #666666;
+            outline: none;
+            border-radius: 5px;
+        }
+
+        .passwordWrapper {
+            position: relative;
+            width: 100%;
+        }
+
+        .passwordWrapper input {
+            padding-right: 40px;
+        }
+
+        .togglePassword {
+            position: absolute;
+            top: 50%;
+            right: 14px;
+            transform: translateY(-50%);
+            cursor: pointer;
+            width: 20px;
+        }
+
+        .submitButton {
+            width: 300px;
+            height: 45px;
+            gap: 0px;
+            border-radius: 5px;
+            background: rgba(70, 163, 88, 1);
+            color: white;
+            border: 0;
+            margin-top: 25px;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 16px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .titleRegisterWith {
+            width: 300px;
+            height: 16px;
+            left: 103px;
+            gap: 0px;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 16px;
+            margin-top: 36px;
+            color: rgba(61, 61, 61, 1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #3D3D3D;
+
+        }
+
+        .titleRegisterWithLine {
+            width: 96px;
+            height: 0px;
+            border: 1px solid rgba(234, 234, 234, 1)
+        }
+
+        .googleBtn,
+        .facebookBtn {
+            position: relative;
+            margin-top: 27px;
+            border: 1px solid #EAEAEA;
+            border-radius: 5px;
+            width: 300px;
+            height: 40px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 9px;
+            background-color: white;
+            cursor: pointer;
+            color: #727272;
+        }
+
+        .facebookBtn {
+            margin-top: 15px;
+        }
+
+        .bottomStripe {
+            height: 10px;
+            width: 100%;
+            background-color: rgba(70, 163, 88, 1);
+            position: absolute;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="closeBtn">
+            <img src="./img/CloseBtn.png" alt="close">
+        </div>
+        <div class="switherLoginRegister">
+            <a class="loginLink" href="#">Login</a>
+            <span class="switherLoginRegisterDivider">I</span>
+            <a class="registerLink" href="#">Register</a>
+        </div>
+        <div class="titleRegister">
+            Enter your email and password to register.
+        </div>
+        <form action="#">
+            <input type="text" placeholder="Username" name="username" id="username" required>
+            <input type="email" placeholder="Enter your email address" name="email" id="email" required>
+            <div class="passwordWrapper">
+                <input type="password" placeholder="Password" name="password" id="password" maxlength="20" required>
+                <img src="./img/ShowPassword.png" alt="Toggle Password" class="togglePassword">
+            </div>
+            <input type="password" placeholder="Confirm Password" name="confirmPassword" id="confirmPassword"
+                maxlength="20" required>
+            <button type="submit" class="submitButton">Register</button>
+        </form>
+        <div class="titleRegisterWith">
+            <span class="titleRegisterWithLine"></span>
+            <span>Or register with</span>
+            <span class="titleRegisterWithLine"></span>
+        </div>
+        <button class="googleBtn">
+            <img src="./img/google.png" alt="google">
+            <span>Continue with Google</span>
+        </button>
+        <button class="facebookBtn">
+            <img src="./img/facebook.png" alt="facebook">
+            <span>Continue with Facebook</span>
+        </button>
+        <div class="bottomStripe"></div>
+    </main>
+
+    <script>
+        const passwordInput = document.getElementById('password');
+        const togglePassword = document.querySelector('.togglePassword');
+
+        togglePassword.addEventListener('mousedown', () => {
+            passwordInput.setAttribute('type', 'text');
+        });
+
+        togglePassword.addEventListener('mouseup', () => {
+            passwordInput.setAttribute('type', 'password');
+        });
+
+        togglePassword.addEventListener('mouseleave', () => {
+            passwordInput.setAttribute('type', 'password');
+        });
+    </script>
+
+</body>
+
+</html>
