@@ -1,0 +1,72 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs/
+*.log
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.idea/
+.vscode/
+
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Optional runtime data
+.pnpm-debug.log*
+.next/
+.nuxt/
+dist/
+build/
+cache/
+coverage/
+
+# Mac OS metadata
+*.DS_Store
+
+# Visual Studio Code settings
+.vscode/
+.history/
+
+# Build directories
+build/
+dist/
+out/
+
+# Local environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Private key files
+*.pem
+
+# Other IDEs and Editors
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Optional: any other files or directories you want to ignore
