@@ -1,11 +1,16 @@
 @import url("./fonts.css");
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@400;700&display=swap');
 
-body{
-    font-family: "Cera Pro" , sans-serif;
+body {
+    font-family: "Cera Pro", sans-serif;
 }
 
 a {
     text-decoration: none;
+}
+
+li {
+    list-style: none;
 }
 
 .header-wrapper {
@@ -69,21 +74,28 @@ a {
 .nav {
     width: calc(100% - 250px);
     height: 53px;
+    font-family: "Encode Sans Expanded", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
-    text-align: center;
     vertical-align: top;
     padding-top: 8px;
+    padding-left: 230px;
 
 }
 
-.nav a {
-    margin: 0 25px;
+.nav-item:not(:last-child) {
+    margin-right: 47px;
     position: relative;
+
+
 }
 
-.nav a.active-page {
+.nav-item {
+    padding-bottom: 37px;
+}
+
+.active-page {
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
@@ -96,7 +108,7 @@ a {
     height: 3px;
     background-color: rgba(70, 163, 88, 1);
     position: absolute;
-    bottom: -29px;
+    bottom: 11px;
     left: 0;
 }
 
@@ -128,6 +140,7 @@ a {
 .right-block-img_big {
     width: 507px;
     height: 450px;
+
 }
 
 .right-block-img_small {
@@ -153,7 +166,6 @@ a {
     font-size: 70px;
     font-weight: 900;
     line-height: 70px;
-    text-align: left;
     margin-bottom: 5px;
     padding-left: 0;
     transform: translateX(-3px);
@@ -170,6 +182,7 @@ a {
     line-height: 24px;
     text-align: left;
     margin-bottom: 44px;
+    color: rgba(114, 114, 114, 1);
 }
 
 .shop-btn {
@@ -182,4 +195,89 @@ a {
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
+}
+
+
+.menu-dd-parent {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-dd-parent:hover .menu-dd:not(.second) {
+    display: block;
+}
+
+.menu-dd {
+    background-color: rgba(237, 246, 238, 1);
+    position: absolute;
+    top: 57px;
+    left: -50%;
+    z-index: 2;
+    display: none;
+}
+
+.menu-dd a {
+    width: 190px;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-dd li {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgba(61, 61, 61, 1);
+    padding: 8px 10px 7px 14px;
+    text-align: left;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.menu-dd li:hover {
+    background-color: rgba(26, 113, 42, 1);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 1);
+
+}
+
+.menu-dd li:last-child {
+    padding-right: 25px;
+}
+
+.menu-dd li:last-child::after {
+    content: url(../img/main_page/menu_button_arrow_right.png);
+    position: absolute;
+    right: 17px;
+    height: 10px;
+    width: 6px;
+    top: 0;
+    transform: translateY(50%);
+}
+
+.menu-dd li:last-child:hover::after {
+    content: url(../img/main_page/menu_button_arrow_left.png);
+}
+
+.menu-dd .second {
+    top: -300%;
+    left: 100%;
+    display: none;
+    transform: none;
+    border-left: 2px solid white;
+}
+
+
+.menu-dd .second li:last-child::after {
+    content: ""
+}
+
+.menu-dd li:last-child:hover .second {
+    display: block;
+}
+
+.second a {
+    width: 180px;
 }
