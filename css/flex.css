@@ -8,12 +8,12 @@ a {
     text-decoration: none;
 }
 
-.main-wrapper {
+.blog-section .main-wrapper {
     max-width: 1200px;
     margin: 69px auto;
 }
 
-.top-frame {
+.blog-section .top-frame {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -22,7 +22,7 @@ a {
 
 }
 
-.top-frame-block {
+.blog-section .top-frame-block {
     max-width: 586px;
     display: flex;
     position: relative;
@@ -31,7 +31,7 @@ a {
     flex: 1 1 auto;
 }
 
-.top-frame-block::before {
+.blog-section .top-frame-block::before {
     content: "";
     position: absolute;
     top: 52px;
@@ -42,7 +42,7 @@ a {
     z-index: -1;
 }
 
-.top-frame-block-flower_img {
+.blog-section .top-frame-block-flower_img {
     width: 290px;
     height: 292px;
 
@@ -50,7 +50,7 @@ a {
     z-index: 1;
 }
 
-.top-frame-content-wrapper {
+.blog-section .top-frame-content-wrapper {
     margin-right: 30px;
     display: flex;
     flex-direction: column;
@@ -61,7 +61,7 @@ a {
     z-index: 2;
 }
 
-.top-frame-block-title {
+.blog-section .top-frame-block-title {
     font-size: 18px;
     font-weight: 900;
     line-height: 24px;
@@ -71,7 +71,7 @@ a {
     color: rgba(61, 61, 61, 1);
 }
 
-.top-frame-block-main-text {
+.blog-section .top-frame-block-main-text {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
@@ -80,7 +80,7 @@ a {
     color: rgba(114, 114, 114, 1);
 }
 
-.button-find_more {
+.blog-section .button-find_more {
     margin-top: 25px;
     width: 140px;
     height: 40px;
@@ -97,30 +97,30 @@ a {
     gap: 2px;
 }
 
-.button-find_more img {
+.blog-section .button-find_more img {
     max-width: 18px;
 }
 
-.bottom-frame {
+.blog-section .bottom-frame {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
 
-.bottom-frame-bottom-block {
+.blog-section .bottom-frame-bottom-block {
     display: flex;
     justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
 }
 
-.bottom-frame-top-block {
+.blog-section .bottom-frame-top-block {
     text-align: center;
 
 }
 
-.bottom-frame-top-block h2 {
+.blog-section .bottom-frame-top-block h2 {
     font-size: 30px;
     font-weight: 700;
     line-height: 16px;
@@ -128,7 +128,7 @@ a {
     margin-bottom: 15px;
 }
 
-.bottom-frame-top-block p {
+.blog-section .bottom-frame-top-block p {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
@@ -136,22 +136,22 @@ a {
     margin-bottom: 35px;
 }
 
-.bottom-content-block {
+.blog-section .bottom-content-block {
     width: 270px;
     background: rgba(251, 251, 251, 1);
     margin-bottom: 68px;
 }
 
-.bottom-content-block img {
+.blog-section .bottom-content-block img {
     width: 100%;
 }
 
-.bottom-content-block-text {
+.blog-section .bottom-content-block-text {
     padding-top: 9px;
     padding-left: 15px;
 }
 
-.bottom-content-block-text-green_title {
+.blog-section .bottom-content-block-text-green_title {
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
@@ -159,7 +159,7 @@ a {
     margin-bottom: 4px;
 }
 
-.bottom-content-block-text h3 {
+.blog-section .bottom-content-block-text h3 {
     font-size: 20px;
     font-weight: 700;
     line-height: 26px;
@@ -167,7 +167,7 @@ a {
     margin-bottom: 4px;
 }
 
-.bottom-content-block-main_text {
+.blog-section .bottom-content-block-main_text {
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
@@ -175,7 +175,7 @@ a {
     margin-bottom: 9px;
 }
 
-.button-read_more {
+.blog-section .button-read_more {
     border: 0;
     background: none;
     font-size: 14px;
@@ -189,6 +189,6 @@ a {
     margin-bottom: 13px;
 }
 
-.button-read_more img {
+.blog-section .button-read_more img {
     width: 16px;
 }

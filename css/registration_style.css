@@ -1,6 +1,9 @@
+@import url("./fonts.css");
+
+
         body {
             background: #eaeaea;
-            font-family: 'Poppins', sans-serif;
+            font-family: "Cera Pro", sans-serif;
             font-style: normal;
             display: flex;
             justify-content: center;
