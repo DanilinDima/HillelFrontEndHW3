@@ -7,16 +7,74 @@
     <title>GREENSHOP</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" media="screen and (max-width: 1025px)" href="./css/middle.css">
+    <link rel="stylesheet" media="screen and (max-width: 481px)" href="./css/small.css">
 </head>
 
 <body>
     <main>
 
+        <div class="mobile-nav ">
+            <a class="mobile-nav-item" href="#">Home</a>
+            <a class="mobile-nav-item" href="#">Shop</a>
+
+            <a class="mobile-nav-item sub-first" href="#">Plant Care <img
+                    src="./img/main_page/menu_button_arrow_right.png" alt="arrow"></a>
+            <ul class="mobile-nav-item-submenu-1">
+                <li>
+                    <a class="mobile-nav-item" href="#">Drainage</a>
+                </li>
+                <li>
+                    <a class="mobile-nav-item" href="#">Fungicides</a>
+                </li>
+                <li>
+                    <a class="mobile-nav-item" href="#">Fertilizer</a>
+                </li>
+                <li>
+                    <a class="mobile-nav-item sub-second" href="#">Priming <img
+                            src="./img/main_page/menu_button_arrow_right.png" alt="arrow"></a>
+                    <ul class="mobile-nav-item-submenu-2">
+                        <li>
+                            <a class="mobile-nav-item" href="#">Universal</a>
+                        </li>
+                        <li>
+                            <a class="mobile-nav-item" href="#">For Ficus</a>
+                        </li>
+                        <li>
+                            <a class="mobile-nav-item" href="#">For Cacti</a>
+                        </li>
+                        <li>
+                            <a class="mobile-nav-item" href="#">For Citrus</a>
+                        </li>
+                        <li>
+                            <a class="mobile-nav-item" href="#">For those in bloom</a>
+                        </li>
+                        <li>
+                            <a class="mobile-nav-item" href="#">For Orchids</a>
+
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <a class="mobile-nav-item" href="#">Blogs</a>
+        </div>
         <div class="home-section">
             <div class="header-wrapper">
-                <div class="header-logo">
-                    <img src="./img/main_page/header_logo.svg" alt="Logo">
+
+                <div class="header-left-block">
+                    <div class="burger-button">
+                        <span></span>
+                    </div>
+
+                    <div class="header-logo">
+                        <img src="./img/main_page/header_logo.svg" alt="Logo">
+                    </div>
                 </div>
+
+
+
+
                 <nav class="nav">
                     <a class="nav-item active-page" href="#">Home</a>
                     <a class="nav-item" href="#">Shop</a>
@@ -74,7 +132,14 @@
                             <span>Login</span>
                         </button>
                     </div>
+
+
                 </div>
+
+                <div class="header-logo-smallscreen">
+                    <img src="./img/main_page/header_logo.svg" alt="Logo">
+                </div>
+
 
             </div>
 
@@ -85,7 +150,7 @@
                             WELCOME TO GREENSHOP
                         </div>
                         <div class="tagline">
-                            LET'S MAKE A<br>BETTER <span>PLANET</span>
+                            LET'S MAKE A BETTER <span>PLANET</span>
                         </div>
                         <div class="content-text">
                             We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants
@@ -96,8 +161,13 @@
                     </div>
                     <div class="right-block">
 
-                        <img class="right-block-img_big" src="./img/main_page/Plant_big.png" alt="plant">
-                        <img class="right-block-img_small" src="./img/main_page/Plant_big.png" alt="plant">
+                        <img class="right-block-img_big" src="./img/main_page/Plant_big.png"
+                            srcset="./img/main_page/Plant_big_small_screen.png 480w, ./img/main_page/Plant_big.png 481w"
+                            sizes="(max-width: 480px) 100vw, 100vw" alt="Plant">
+                        <img class="right-block-img_small" src="./img/main_page/Plant_big.png"
+                            srcset="./img/main_page/Plant_big_small_screen.png 480w, ./img/main_page/Plant_big.png 481w"
+                            sizes="(max-width: 480px) 100vw, 100vw" alt="Plant">
+
                     </div>
                 </div>
             </div>
